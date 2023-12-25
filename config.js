@@ -3,20 +3,20 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 
 //═══════[Required Variables]════════\\
-global.owner = process.env.OWNER_NUMBER.split("Morice Ug,256707521863")
+global.owner = process.env.OWNER_NUMBER.split("VISENTIAL,256757124664")
 global.mongodb = process.env.MONGODB_URI || "mongodb+srv://moriceug:ykneyPF1867D9903@clustermorice.sqdmjyk.mongodb.net/?retryWrites=true&w=majority"
 global.port= process.env.PORT || 5000
 global.email = 'moriceug256@gmail.com'
 global.github = 'https://github.com/saviya55/Saviya-Md'
 global.location = 'Sultanpur IN'
 global.gurl = 'https://instagram.com/' // add your username
-global.sudo = process.env.SUDO || '256707521863'
-global.devs = '256707521863';
+global.sudo = process.env.SUDO || '256757124664'
+global.devs = '256757124664';
 global.website = 'https://github.com/saviya55/Saviya-Md' //wa.me/+91000000000000
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/49ceffdee14dac505f424.jpg'
 module.exports = {
-  botname:   process.env.BOT_NAME === undefined ? 'MORICEUG-BOT' : process.env.BOT_NAME,
-  ownername: process.env.OWNER_NAME === undefined ? 'moriceug' : process.env.OWNER_NAME,
+  botname:   process.env.BOT_NAME === undefined ? 'VISENTIAL-BOT' : process.env.BOT_NAME,
+  ownername: process.env.OWNER_NAME === undefined ? 'VISENTIAL' : process.env.OWNER_NAME,
   sessionName:  process.env.SESSION_ID === undefined ? false : process.env.SESSION_ID,
   author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'moriceug' : process.env.PACK_INFO.split("MORICE;@moriceug")[0],
   auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? true : process.env.AUTO_READ_STATUS,
@@ -25,9 +25,9 @@ module.exports = {
   antibadword :  process.env.ANTI_BAD_WORD === undefined ? 'nbwoed' : process.env.ANTI_BAD_WORD,
   alwaysonline:  process.env.ALWAYS_ONLINE === undefined ? true : process.env.ALWAYS_ONLINE,
   antifake : process.env.FAKE_COUNTRY_CODE === undefined ? '971' : process.env.FAKE_COUNTRY_CODE,
-  readmessage:  process.env.READ_MESSAGE === undefined ? false : process.env.READ_MESSAGE,
+  readmessage:  process.env.READ_MESSAGE === undefined ? true : process.env.READ_MESSAGE,
   auto_status_saver: process.env.AUTO_STATUS_SAVER === undefined ? false : process.env.AUTO_STATUS_SAVER,
-  HANDLERS:  process.env.PREFIX === undefined ? ['/'] : process.env.PREFIX,
+  HANDLERS:  process.env.PREFIX === undefined ? ['.'] : process.env.PREFIX,
   warncount : process.env.WARN_COUNT === undefined ? 3 : process.env.WARN_COUNT,
   disablepm:  process.env.DISABLE_PM === undefined ? false : process.env.DISABLE_PM,
   levelupmessage:  process.env.LEVEL_UP_MESSAGE === undefined ? true : process.env.LEVEL_UP_MESSAGE,
